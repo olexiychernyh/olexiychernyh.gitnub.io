@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport">
+    <title>OldGames Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=DotGothic16&family=Jost&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("39279-original-windows-95-wallpaper.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .top_mini_menu {
+            width: 100%;
+            height: 20px;
+            background: linear-gradient(to right, #002173, #BDD0FF);
+        }
+
+        .style_text {
+            color: white;
+
+        }
+
+        */ .main_content {
+            background: #E6E6E6;
+            width: 98%;
+            margin-left: 10px;
+            height: 90%;
+            margin-top: 10px;
+            border-top: 2px solid #EBEBEB;
+            border-left: 2px solid #EBEBEB;
+            border-right: 2px solid #4F4E4E;
+            border-bottom: 2px solid #4F4E4E;
+        }
+
+        .pas {
+            margin-top: 1500px;
+        }
+
+        .menu_button_h3 {
+            margin: 10px;
+        }
+
+        .c {
+            margin-left: 15px;
+
+        }
+
+        .cs {
+            margin-left: 100px;
+
+        }
+
+        .text_1 {
+            margin-left: 15px;
+            margin-top: 10px;
+        }
+
+        .katalog_stry {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            display: flex;
+            border-top: 2px solid #EBEBEB;
+            border-left: 2px solid #EBEBEB;
+            border-right: 2px solid #4F4E4E;
+            border-bottom: 2px solid #4F4E4E;
+            background-color: #E6E6E6;
+
+        }
+
+        .katalog_stry_2 {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+            display: flex;
+            border-top: 2px solid #EBEBEB;
+            border-left: 2px solid #EBEBEB;
+            border-right: 2px solid #4F4E4E;
+            border-bottom: 2px solid #4F4E4E;
+            background-color: #E6E6E6;
+        }
+
+        .katalog_game {
+            margin: 10px;
+            display: flex;
+
+        }
+
+        .katalog_g {
+            background: linear-gradient(to right, #002173, #ffffff);
+            height: 21px;
+            color: white;
+            font-size: 16px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'DotGothic16', sans-serif;
+        }
+
+        .katalog_header {
+            border-top: 2px solid #EBEBEB;
+            border-left: 2px solid #EBEBEB;
+            border-right: 2px solid #4F4E4E;
+            border-bottom: 2px solid #4F4E4E;
+            background-color: #E6E6E6;
+            margin: 10px;
+        }
+
+        #a {
+            width: 280px;
+        }
+
+        .game_info {
+            margin: 10px;
+            border-top: 2px solid #EBEBEB;
+            border-left: 2px solid #EBEBEB;
+            border-right: 2px solid #4F4E4E;
+            border-bottom: 2px solid #4F4E4E;
+            background-color: #E6E6E6;
+
+        }
+
+        .text_game {
+            margin-left: 40%;
+        }
+
+        .info_foto {
+            float: left;
+            padding-right: 10px;
+        }
+
+        .ig {
+            width: 580px;
+            padding: 0px;
+            margin: 5px;
+        }
+
+        .scrin_text {
+            margin-left: 10px;
+        }
+
+        .imagi {
+            float: right;
+            float: left;
+            float: top;
+            float: bottom;
+        }
+
+        .g_text {
+            margin: 7px;
+
+        }
+
+        #kg_1 {
+            height: 365px;
+        }
+
+        #kg_2 {
+            height: 318px;
+        }
+
+        #kg_3 {
+            height: 342px;
+        }
+
+        #kg_5 {
+            height: 322px;
+        }
+
+        #kg_6 {
+            height: 280px;
+        }
+
+        #kg_7 {
+            height: 330px;
+        }
+
+        .g_textF {
+            margin-bottom: 7px;
+        }
+
+        .game_scrinshots {}
+
+        .play {
+            font-size: 20px;
+        }
+
+        .ss {
+            width: 270px;
+        }
+
+        .x {
+            height: 20px;
+        }
+
+        .img-full-show {
+            height: 80%;
+            width: auto;
+        }
+
+        .img-galery {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(155, 155, 155, 0.698);
+        }
+
+        .igg {}
+
+        .fotofix {
+            width: 100%;
+            height: 100%;
+        }
+
+
+   
+
+        #frame {
+        }
+
+        @keyframes frame-animation {
+            0% {
+                background-position: 0px 0;
+            }
+
+            100% {
+                background-position: -500px 0;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        
+
+
+
+
+        #frame2 {
+        }
+
+        @keyframes frame-animation2 {
+            0% {
+                background-position: 0px 0;
+            }
+
+            100% {
+                background-position: -500px 0;
+            }
+        }
+
+        .hidden2 {
+            display: none;
+        }
+
+        .button{
+            border: 0;
+            background: none;
+            margin: 0;
+        }
+
+
+
+
+
+
+
+
+        #frame3 {
+        }
+
+        @keyframes frame-animation3 {
+            0% {
+                background-position: 0px 0;
+            }
+
+            100% {
+                background-position: -500px 0;
+            }
+        }
+
+        .hidden3 {
+            display: none;
+        }
+
+        .button{
+            border: 0;
+            background: none;
+            margin: 0;
+        }
+
+
+
+
+        #frame4 {
+        }
+
+        @keyframes frame-animation2 {
+            0% {
+                background-position: 0px 0;
+            }
+
+            100% {
+                background-position: -500px 0;
+            }
+        }
+
+        .hidden4 {
+            display: none;
+        }
+
+        .button{
+            border: 0;
+            background: none;
+            margin: 0;
+        }
+
+
+
+
+
+        #frame5 {
+        }
+
+        @keyframes frame-animation5 {
+            0% {
+                background-position: 0px 0;
+            }
+
+            100% {
+                background-position: -500px 0;
+            }
+        }
+
+        .hidden5 {
+            display: none;
+        }
+
+        .button{
+            border: 0;
+            background: none;
+            margin: 0;
+        }
+
+
+
+
+
+
+
+        #frame6 {
+        }
+
+        @keyframes frame-animation6 {
+            0% {
+                background-position: 0px 0;
+            }
+
+            100% {
+                background-position: -500px 0;
+            }
+        }
+
+        .hidden6 {
+            display: none;
+        }
+
+        .button{
+            border: 0;
+            background: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+ 
+    
+        
+    
+    <div class="katalog_stry">
+        <div class="katalog_header" id="frame">
+            <div class="katalog_g">Doom <button class="button" id="removeDiv"><img src="qa0k1n3tfar81.png" class="x"></button></div>
+            <div class="katalog_game" id="kg_1"><a href="#Doom"><img src="274px-Doom_cover.jpg" class="imagi"
+                        id="doom"></a>
+                <h4 class="g_text">Осново-положник жанра шутеров<p>Сис требования:4 МБ ОЗУ
+                        40 МБ на жёстком диске
+                        Intel 386DX</p>
+                    <p>Платформы:
+                    <p>Windows</p> MS-DOS</p> Android</p>
+                </h4>
+            </div>
+        </div>
+        <div class="katalog_header" id="frame2">
+            <div class="katalog_g">MDK <button class="button" id="removeDiv2"><img src="qa0k1n3tfar81.png" class="x"></button></div>
+            <div class="katalog_game" id="kg_2"><a href="#MDK"><img src="274px-MDC_cover.jpg" class="imagi"
+                        id="mdk"></a>
+                <h4 class="g_text">Классический шутер<p>Сис требования:90 MHz CPU, 16 Mb RAM, 37 Mb на диске, Windows 95
+                    </p>
+                    <p>Платформы:
+                    <p>Windows</p>Mac Os</p>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="katalog_stry">
+        <div class="katalog_header" id="frame3">
+            <div class="katalog_g">Carmageddon <button class="button" id="removeDiv3"><img src="qa0k1n3tfar81.png" class="x"></button></div>
+            <div class="katalog_game" id="kg_3"><a href="#Carmageddon"><img src="274px-Carmageddon_box.jpg"
+                        class="imagi" id="carmageddon"></a>
+                <h4 class="g_text">Первая игра в жанре "Гонка на выжывание"<p>Сис требования:75 МГц CPU
+                        8 МБ RAM
+                        50 МБ HDD</p>
+                    <p>Платформы:
+                    <p>Windows
+                    <p></p>Mac Os</p> Android</p>
+                </h4>
+            </div>
+        </div>
+        <div class="katalog_header" id="frame4">
+            <div class="katalog_g">Cyndicate <button class="button" id="removeDiv4"><img src="qa0k1n3tfar81.png" class="x"></button></div>
+            <div class="katalog_game" id="kg_4"><a href="#Syndicate"><img src="274px-Syndicate_-_Sega_-_постер.jpg"
+                        class="imagi" id="syndicate"></a>
+                <h4 class="g_text">Экономическая стратегия<p>Сис требования:Минимальные</p>
+                    <p>Платформы:
+                    <p> MS-DOS
+                    <p></p>PSP</p> Sega Mega Drive</p>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="katalog_stry">
+        <div class="katalog_header" id="frame5">
+            <div class="katalog_g">Wolfenstein 3D <button class="button" id="removeDiv5"><img src="qa0k1n3tfar81.png" class="x"></button></div>
+            <div class="katalog_game" id="kg_5"><a href="#W3"><img src="274px-Wolf3d_cover.jpg" class="imagi"
+                        id="w3"></a>
+                <h4 class="g_text">Один из первых шутеров<p>Сис требования:ОС: DOS 5.0 или выше
+                        ОЗУ: 640 Кб
+                        Жёсткий диск: 3 МБ
+                        Процессор: 80286/20 МГц
+                        Видео: VGA
+                        Звук: поддерживается Sound Blaster, AdLib или 100% совместимая с ними звуковая карта</p>
+                    <p>Платформы:
+                    <p>MS DOS
+                    <p></p>Windows</p>iOS</p>
+                </h4>
+            </div>
+        </div>
+        <div class="katalog_header" id="frame6">
+            <div class="katalog_g">SimSity <button class="button" id="removeDiv6"><img src="qa0k1n3tfar81.png" class="x"></button></div>
+            <div class="katalog_game" id="kg_6"><a href="#SS"><img src="SimCity_Classic_cover_art (2).jpg" class="ss"
+                        class="imagi" class="fotofix"></a>
+                <h4 class="g_text">Первая игра в жанре градостроительноый симулятор<p>Сис требования:RAM: 1 МБ</p>
+                    <p>Платформы:
+                    <p>IBM PC
+                    <p></p>Windows 3.x</p>
+                    </p>
+                </h4>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="game_info">
+        <h1 class="text_game" id="Doom">Doom(1993)</h1>
+        <a href="#doom"><img src="274px-Doom_cover.jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">Doom (стилизованное написание — DooM или DOOM) — компьютерная игра в жанре шутера от
+                первого лица, разработанная и выпущенная компанией id Software в 1993 году. Doom является одной из самых
+                значительных и влиятельных компьютерных игр в истории индустрии; в частности, её популярность во многом
+                определила дальнейшее развитие и распространение жанра шутеров от первого лица[1].</p>
+
+            <p class="git">Игроку предлагается поочерёдно исследовать уровни разной сложности, разгадывать
+                пространственные и (редко) логические задачи, находить тайники, уничтожать как можно больше монстров и
+                выживать. Уровни представляют собой запутанные лабиринты со множеством дверей, ключей, лифтов, шахт,
+                кнопок и секретных комнат. Вместо пола могут быть лава, кислоты разной силы, вода, ядовитые отходы. На
+                большинстве уровней есть телепорты, мгновенно переносящие игрока в другое место на текущем уровне.
+                Некоторые участки пола способны двигаться в вертикальном направлении (как по желанию, так и без желания
+                игрока), другие могут из камня превратиться в кислоту (обычно это выглядит как погружение пола в
+                окружающие его отходы), третьи открывают тайные двери с засадой (технически это осуществляется при
+                пересечении границы между участками, а не при нахождении в одном из них). Потолки некоторых норовят
+                опуститься, как пресс, и сдавить игрока (что не обязательно смертельно даже при сжатии его до нулевой
+                высоты). Кнопками открываются проходы, недоступные ранее, активируются двери и так далее. Так или иначе,
+                конечной целью игрока является поиск выхода с уровня. Это может быть рубильник (зачастую в комнате с
+                надписью «Выход»), люк в полу, особый телепорт или монстр-босс. Увиденная игроком часть уровня, за
+                исключением некоторых секретов и «технических» границ наподобие скайбокс, наносится на автокарту.</p>
+
+            <p class="git">Идею названия игры, по словам главного разработчика Джона Кармака, подсказал фильм «Цвет
+                денег», в котором главный герой Винсент (Том Круз) является в бильярдный зал с чемоданчиком в руке и, в
+                ответ на вопрос «What you’ve got in there?» («Что у тебя там?»), отвечает со зловещей усмешкой:
+                «Doom»[4]. Стиль же игры, по признанию Джона Кармака, был навеян фильмами «Чужие» и «Зловещие мертвецы
+                2»[4].</p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a href="https://playminigames.ru/game/doom-1">Играть</a>
+            </h3>
+            <img src="1.jpg" class="ig">
+            <img src="2.jpg" class="ig">
+            <img src="3.jpg" class="ig">
+            <img src="4.jpg" class="ig">
+            <img src="5.jpg" class="ig">
+            <img src="6.jpg" class="ig">
+            <img src="7.jpg" class="ig">
+        </div>
+    </div>
+
+
+
+    <!-- <div class="game_info">
+        <h1 class="text_game" id="">(199*)</h1>
+        <a href="#"><img src=".jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, tempora nesciunt consectetur
+                eius nemo
+                reiciendis ipsam, itaque aut sequi et voluptatem mollitia voluptates praesentium, eos qui similique ut
+                dicta doloribus.</p>
+
+            <p class="git">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, tempora nesciunt consectetur
+                eius nemo
+                reiciendis ipsam, itaque aut sequi et voluptatem mollitia voluptates praesentium, eos qui similique ut
+                dicta doloribus.</p>
+
+            <p class="git">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, tempora nesciunt consectetur
+                eius nemo
+                reiciendis ipsam, itaque aut sequi et voluptatem mollitia voluptates praesentium, eos qui similique ut
+                dicta doloribus.</p>
+
+            <p class="git">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, tempora nesciunt consectetur
+                eius nemo
+                reiciendis ipsam, itaque aut sequi et voluptatem mollitia voluptates praesentium, eos qui similique ut
+                dicta doloribus.</p>
+
+            <p class="git">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, tempora nesciunt consectetur
+                eius nemo
+                reiciendis ipsam, itaque aut sequi et voluptatem mollitia voluptates praesentium, eos qui similique ut
+                dicta doloribus.</p>
+
+            <p class="git">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, tempora nesciunt consectetur
+                eius nemo
+                reiciendis ipsam, itaque aut sequi et voluptatem mollitia voluptates praesentium, eos qui similique ut
+                dicta doloribus.</p>
+            <p class="git">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, tempora nesciunt consectetur
+                eius nemo
+                reiciendis ipsam, itaque aut sequi et voluptatem mollitia voluptates praesentium, eos qui similique ut
+                dicta doloribus.</p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a href="">Играть</a>
+            </h3>
+            <img src="1.jpg" class="ig">
+            <img src="2.jpg" class="ig">
+            <img src="3.jpg" class="ig">
+            <img src="4.jpg" class="ig">
+            <img src="5.jpg" class="ig">
+            <img src="6.jpg" class="ig">
+            <img src="7.jpg" class="ig">
+            <img src="8.jpg" class="ig">
+        </div>
+    </div> -->
+
+
+
+    <div class="game_info">
+        <h1 class="text_game" id="">MDK(1997)</h1>
+        <a href="#mdk"><img src="274px-MDC_cover.jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">MDK — компьютерная игра, трёхмерный шутер от третьего лица с элементами шутера от первого
+                лица.
+                Изначально разработчиками игра была названа Max, Dr. Fluke Hawkins & Kurt, однако непосредственно перед
+                промышленным производством игра была переименована в MDK[3].
+
+                Существует несколько расшифровок аббревиатуры MDK. Начальные буквы имён главных героев игры Max, Doctor,
+                Kurt — пёс Макс, Доктор Хокинс и Курт Хектик. Миссия Курта носит название «Mission: Deliver Kindness»
+                («Миссия: Доставка Доброты»), а также MDK расшифровывают как Murder, Death, Kill.</p>
+
+            <p class="git">Игровой процесс очень схож с обычными шутерами от третьего лица. Игрок имеет богатый арсенал,
+                действие которого различно в режиме пулемета и снайперском режиме. В дополнение к обычному бегу и
+                стрельбе, в игре присутствуют различные мини-игры, а также небольшие квесты в начале и конце уровня (см.
+                ниже). Например, Курту предстоит захватить бомбардировщик, проехать на сноуборде, а также
+                замаскироваться под караульного робота, чтобы обмануть охранников.</p>
+
+            <p class="git">Каждый уровень разделен на специальные зоны, так называемые Арены. Каждая арена может иметь
+                своё строение, размер и методы прохождения. Некоторые арены представляют собой большие поля с
+                генераторами пехотинцев, некоторые требуют навыков владения парашютом и прыжков по платформам, некоторые
+                арены требуют решения головоломок.</p>
+
+            <p class="git">Несмотря на то, что в MDK всего шесть уровней, каждый уровень огромен и состоит из большого
+                количества арен, соединенных между собой линейно. Так как изначально игра была разработана для консоли
+                PlayStation, в оригинальной версии игры сохранять игру можно только между уровнями, и, если игрок
+                погибает, он начинает уровень сначала. Позже был выпущен патч, который добавил возможность сохраняться в
+                любом месте уровня.</p>
+
+            <p class="git">Основная защита Курта — это Витой Костюм Доктора Хокинса, плотный доспех, сделанный из
+                похожего на кожу материала. Костюм хорошо защищает Курта от различного оружия, также он помогает
+                избежать смертельного воздействия атмосферного трения при прыжке с Джима Денди. Надстройка к шлему
+                костюма на самом деле является снайперской винтовкой. Она способна давать увеличение и использовать до
+                шести видов патронов. Три камеры позволяют проследить движение пули до попадания её в цель. Если снять
+                надстройку со шлема и соединить её с рукой костюма, она будет работать как скорострельный пулемет с
+                бесконечным боезапасом. Также можно найти power-up для увеличения мощности пулемета (до 400 выстрелов в
+                одном power-up). Костюм также снабжен парашютом, который позволяет планировать и подниматься вместе с
+                потоками воздуха.</p>
+
+            <p class="git">На протяжении всей игры звучит оригинальная музыка, написанная композиторами Тодом Деннисом
+                (Todd Dennis) и Томми Талларико[5]. На одной из арен используется фрагмент произведения М. П.
+                Мусоргского «Картинки с выставки» в аранжировке Криса Хюльсбека (Chris Hülsbeck) и Джея Фрога (Jay Frog)
+            </p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a
+                    href="https://catorrent.org/action/shooter/9998-mdk.html">Скачать и играть</a>
+            </h3>
+            <img src="" class="ig">
+            <img src="5mdk.jpg" class="ig">
+            <img src="6mdk.jpg" class="ig">
+            <img src="7mdk.jpg" class="ig">
+            <img src="8mdk.jpg" class="ig">
+        </div>
+    </div>
+
+    <div class="game_info">
+        <h1 class="text_game" id="Carmageddon">Carmageddon(1997)</h1>
+        <a href="#carmageddon"><img src="274px-Carmageddon_box.jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">Carmageddon (Кармагеддон) — компьютерная игра в жанре аркадные гонки на выживание,
+                разработанная компанией Stainless Games и изданная для персональных компьютеров в 1997 году. Позднее
+                игра была портирована на различные платформы, и были изданы её продолжения, Carmageddon II: Carpocalypse
+                Now и Carmageddon: Reincarnation.</p>
+
+            <p class="git"></p>
+
+            <p class="git">В Carmageddon целью игрока является гонка на автомобиле против ряда других контролируемых
+                компьютером соперников в различных условиях, таких как городские, шахтные и промышленные районы. У
+                игрока есть ограниченное количество времени для завершения каждой гонки, но можно получить больше
+                времени, собирая бонусы, нанося ущерб автомобилям конкурентов и сбивая пешеходов.
+
+                Гонки завершаются либо прохождением трассы как в обычной гоночной игре, либо уничтожением всех
+                автомобилей соперников, либо убийством всех пешеходов на уровне. В игру входят 36 гоночных трасс,
+                которые проводятся по 11 различным картам.</p>
+
+            <p class="git">Игра, которая стала Carmageddon, началась как 3D Destruction Derby, гоночный симулятор где
+                гонщики толкаются автомобилями, который был сделан компанией Stainless Software в 1994 году в качестве
+                прототипа. Разработкой занимались художники Терри Лейн и Рассел Хьюз, программист Мэтт Эдмундс, ведущий
+                программист Патрик Бакленд и ведущий геймдизайнер Нил Барнден. Авторы обращались к различным издателям,
+                которые отказались финансировать разработку проекта. Финансирование было получено от небольшого
+                издательства SCi в 1995 году, но при условии, что проект будет переделан в игру на основе лицензии с
+                тем, чтобы гарантировать её популярность. Первоначально в SCi хотели использовать лицензию «Безумного
+                Макса», но они не смогли выяснить, кто владеет правами на франшизу. Вместо этого они получили лицензию
+                на фильм «Смертельные гонки 2000», поскольку в это время планировалось продолжение оригинального
+                фильма[2][3].</p>
+
+            <p class="git">По словам главного программиста Патрика Бакленда, первоначальная концепция зародилась из того
+                что членам команды было скучно играть в обычные гоночные игры, что приводило их к тому, что они, в
+                конечном счете экспериментировали, двигались в неправильном направлении и врезались в другие автомобили.
+                Они решили, что имеет смысл создать игру, в которой это должно было быть изначальной целью[3]. Однако
+                вскоре после этого компания Psygnosis выпустила игру с этой же концепцией, Destruction Derby. В игровой
+                процесс была добавлена цель сбития пешеходов для того чтобы отличить игру от Destruction Derby и вызвать
+                споры[4]. Сначала разработчики хотели штрафовать игрока за сбитие пешеходов, поскольку боялись что игра
+                может выйти слишком жестокой. Однако Роб Хендерсон из SCi посмотрел игру и предложил начислять очки за
+                них для того чтобы поднять её спорность[2][3].
+
+                К концу разработки съемки сиквела «Смертельные гонки 2000» были отменёны, поэтому издатель решил
+                выпустить игру под новым брендом, которым стал Carmageddon[2].
+
+                Из-за особо жестокого игрового процесса, в ряде стран игра была выпущена с цензурой — люди и животные
+                были заменены на зомби (Великобритания), либо роботов (Германия). Позже в Великобритании игра была
+                переиздана без цензуры. В Бразилии игра была полностью запрещена к продаже, а в Австралии вышла версия
+                без цензуры с рейтингом MA15+.
+
+                17 октября 2012 года было выпущено переиздание игры для iOS[5].
+
+                9 мая 2013 года было выпущено переиздание игры для Android OS.</p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a
+                    href="https://playminigames.ru/game/carmageddon">Играть</a>
+            </h3>
+            <img src="1carmg.jpg" class="ig">
+            <img src="2carmg.jpg" class="ig">
+            <img src="4carmg.jpg" class="ig">
+            <img src="5carmg.jpg" class="ig">
+        </div><iframe width="560" height="315" src="https://www.youtube.com/embed/Vj4yBmaBHCc"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <div class="game_info">
+        <h1 class="text_game" id="Syndicate">Syndicate(1993)</h1>
+        <a href="#syndicate"><img src="274px-Syndicate_-_Sega_-_постер.jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">Syndicate (с англ. — «Синдикат») — компьютерная игра, совмещающая стратегический и
+                тактический элементы. Разработана компанией Bullfrog Productions и выпущена Electronic Arts в 1993 году.
+                Жанр сюжета — киберпанк, антиутопия. Вид тактического экрана изометрический от третьего лица.</p>
+
+            <p class="git">Сюжет игры-
+                Будущее. Мир разделён на зоны, находящиеся под контролем синдикатов, чья власть поддерживается
+                технологией виртуальной реальности, специальными чипами, вживлёнными в мозг граждан и подменяющими
+                окружающий мир иллюзией. Конфликты между синдикатами при переделе зон влияния принято решать с
+                применением отрядов боевых киборгов.
+
+                Игроку предстоит возглавить один из синдикатов и при помощи кибернетических отрядов силой захватить
+                контроль над миром.</p>
+
+            <p class="git">Стратегическая составляющая-
+                Стратегическая часть состоит из экономического и научно-технического элементов. Доступно регулирование
+                уровня налогов в захваченных регионах. От уровня налогов зависит отношение населения региона к власти.
+                Также доступно ведение исследований в области вооружения, оборудования и кибернетических органов для
+                агентов в боевом отряде.</p>
+
+            <p class="git"> Тактическая составляющая-
+                Для выполнения боевых миссий требуется набрать отряд от одного до четырёх агентов. Чаще всего заданием
+                миссии является уничтожение всех вражеских агентов или определённого персонажа, но иногда для выполнения
+                задания требуется определённый предмет, порой недоступный без проведения исследований. Изюминкой игры
+                является возможность взламывать чип иллюзий практически у любого персонажа непосредственно во время
+                миссии. Перехват вражеских агентов и вооружение прохожих позволяет превратить слабую четверку киборгов
+                игрока в устрашающий карательный отряд из нескольких десятков единиц.</p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a
+                    href="https://raidofgame.com/4538-syndicate-1993-download-pc.html">Играть</a>
+            </h3>
+            <img src="1sndk.jpg" class="ig">
+            <img src="2sndk.jpg" class="ig">
+            <img src="3sndk.jpg" class="ig">
+            <img src="4sndk.jpg" class="ig">
+            <img src="5sndk.jpg" class="ig">
+            <img src="6sndk.jpg" class="ig">
+        </div>
+    </div>
+
+    <div class="game_info">
+        <h1 class="text_game" id="SW">Shadow Warrior (1997)</h1>
+        <a href="#sw"><img src="274px-Shadow_Warrior_(game,_1997).jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">Shadow Warrior (с англ. — «Воин Тени») — компьютерная игра в жанре шутера от первого лица,
+                разработанная 3D Realms и выпущенная GT Interactive 13 мая 1997 года. Игра была создана на основе движка
+                Build Engine, разработанного Кеном Сильверманом. 1 октября 1997 года вышел порт игры под Mac OS[2].</p>
+
+            <p class="git">Проработав много лет «воином тени» — телохранителем и исполнителем различной грязной работы —
+                в могущественной корпорации «Зилла», Ло Ван узнаёт о планах корпорации призвать монстров из других
+                измерений и завоевать мир, и покидает компанию. Узнав, что бывший наёмник может помешать её планам,
+                корпорация посылает своих подручных убить его.
+
+                В течение игры Ван обнаруживает, что люди Зиллы убили его учителя, и задаётся целью отомстить.</p>
+
+            <p class="git">В отличие от большинства игр того времени в Shadow Warrior даже самые, казалось бы, слабые
+                враги могут доставить очень серьёзные проблемы. Почти все они владеют мощным оружием, а уже
+                вторая-третья атака ближнего боя очень часто оказывается смертельной для игрока. Лучше всего подобрать
+                для каждого вида противника определённое оружие, использование которого поможет избежать неприятностей.
+
+                Продолжения</p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a
+                    href="https://store.steampowered.com/app/238070/Shadow_Warrior_Classic_1997/?l=russian">Играть в
+                    Steam-- </a><a href="https://playminigames.ru/en/game/shadow-warrior"> --Играть сейчас</a>
+            </h3>
+            <img src="1sw.jpg" class="ig">
+            <img src="2sw.jpg" class="ig">
+            <img src="3sw.jpg" class="ig">
+            <img src="4sw.jpg" class="ig">
+            <img src="5sw.jpg" class="ig">
+        </div>
+    </div>
+
+    <div class="game_info">
+        <h1 class="text_game" id="CHR">Chasm:The Rift(1997)</h1>
+        <a href="#chr"><img src="Chasm_The_Rift.jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">Chasm: The Rift (с англ. — «Пропасть: Раскол») — компьютерная игра в жанре шутера от первого
+                лица, разработанная компанией Action Forms и изданная в 1997 году компаниями WizardWorks Software, GT
+                Interactive Software и MegaMedia Corp.</p>
+
+            <p class="git">Игра представляет собой шутер от первого лица. Интересной особенностью является возможность
+                отстреливать врагам части тела. Для того, чтобы убить некоторых «боссов», необходимо использовать
+                специальные тактики.</p>
+
+            <p class="git">Игра основана на собственном графическом движке, способном осуществлять рендеринг трёхмерных
+                объектов и эффектов погоды; несмотря на это, дизайн уровней остаётся 2,5-мерным, так как планировка
+                локаций плоская (различные сектора уровней не могут располагаться друг над другом).</p>
+
+            <p class="git">Игрок выступает в роли безымянного морского пехотинца. Он должен остановить мутантов Time
+                Strikers, которые собираются захватить землю, телепортируясь в разных временных периодах. Уровни игры
+                включают военные базы (наше время), могилы фараонов (древний Египет) и средневековые замки. Практически
+                все уровни состоят из тёмных коридоров, похожих на катакомбы или склепы.</p>
+
+            <p class="git">Было создано официальное дополнение, которое добавляет три новых уровня и новых монстров. Оно
+                было доступно для бесплатного скачивания с сайта разработчика[1]. Был также доступен редактор уровней.
+            </p>
+
+            <p class="git">В целом игра получила положительные оценки; в числе её достоинств называлась низкая цена,
+                способность нормально работать на медленных 486-х компьютерах; с другой стороны, отмечалось, что она
+                проигрывает ранее вышедшим играм (таким, как Quake), особенно в многопользовательском режиме[5].
+                Обозреватель журнала Game.EXE указал, что «сегодня совершеннее Chasm только две игры: Quake и Hexen
+                2»[5][2].
+
+            </p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a href="https://dosgames.ru/games/chasm-the-rift/">Скачать и
+                    ирать</a>
+            </h3>
+            <img src="1chr.jpg" class="ig">
+            <img src="2chr.jpg" class="ig">
+            <img src="3chr.jpg" class="ig">
+            <img src="4chr.png" class="ig">
+        </div>
+    </div>
+
+    <div class="game_info">
+        <h1 class="text_game" id="W3">Wolfenstein 3D(1992)</h1>
+        <a href="#w3"><img src="274px-Wolf3d_cover.jpg" class="info_foto"></a>
+        <h4 class="game_info_text">
+            <p class="git">Wolfenstein 3D — компьютерная игра в жанре шутера от первого лица, разработанная компанией id
+                Software и изданная Apogee Software. Выпущена 5 мая 1992 года для платформы DOS и впоследствии
+                портирована на различные платформы, включая Super Nintendo Entertaiment System, Atari Jaguar, 3DO, Game
+                Boy Advance, iOS и другие[⇨]. Wolfenstein 3D является третьей игрой в серии игр Wolfenstein — источником
+                вдохновения для её создателей послужила игра 1981 года Castle Wolfenstein. Игрок берёт на себя роль
+                разведчика союзников Второй мировой войны Уильяма (Би-Джея) Бласковица, который пытается сбежать из
+                места своего заключения — замка Вольфенштайн — и выполняет ряд диверсионных заданий против нацистского
+                режима[⇨]. На каждом уровне игрок должен сражаться с нацистскими солдатами, собаками и мутантами,
+                используя нож и огнестрельное оружие, а также добраться до лифта или победить финального босса[⇨].</p>
+
+            <p class="git">Wolfenstein 3D является игрой в жанре шутер от первого лица, где игрок исполняет роль
+                американского разведчика[2]. Игра разделена на 6 эпизодов, каждый из которых состоит из 10 уровней (один
+                из которых секретный). В свою очередь, каждый уровень представляет собой лабиринт, состоящий из комнат и
+                открытых пространств, разделённых стенами и дверями[2]. Кроме того, на каждом уровне есть потайные
+                комнаты, где хранятся дополнительные предметы. Графически уровни Wolfenstein 3D выполнены в стиле
+                нацистских бункеров и построек, и при этом в игре используется псевдотрёхмерность: уровни выполнены в
+                трёхмерной перспективе, а враги и объекты представляют собой двумерные спрайты, нарисованные с
+                нескольких заранее выбранных углов обзора[3].
+
+                Игроку противостоят вооружённые нацистские солдаты, мутанты и сторожевые собаки, которые атакуют
+                главного героя, если тот попадает в поле их зрения[4]. Помимо этого, некоторые категории противников
+                реагируют на звуки выстрелов. В конце каждого эпизода происходит схватка с финальным боссом — особенно
+                сильным уникальным противником[5].</p>
+
+            <p class="git">Американский разведчик Уильям (Би-Джей) Бласковиц был захвачен в плен, пытаясь найти планы
+                операции «Железный кулак» (Operation: Eisenfaust). В первом эпизоде, Escape from Castle Wolfenstein,
+                главный герой бежит из места заключения — замка Вольфенштайн, а в конце эпизода сталкивается с первым
+                боссом игры — Хансом Гроссе. После побега из замка Бласковиц вновь приступает к выполнению своей миссии
+                в эпизоде Operation: Eisenfaust, где срывает план нацистов по созданию армии мутантов в замке
+                Холлехаммер. В конце данного эпизода Би-Джей сталкивается с доктором Шаббсом и в бою побеждает его. В
+                третьем и хронологически последнем эпизоде, Die, Fuhrer, Die!, Бласковиц проникает в бункер,
+                расположенный под рейхстагом, и должен сразиться с финальным боссом, в роли которого выступает Адольф
+                Гитлер, закованный в роботизированную броню и вооружённый четырьмя четырёхствольными пулемётами[9][10].
+            </p>
+
+
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a
+                    href="https://playminigames.ru/game/wolfenstein-3d">Играть</a>
+            </h3>
+            <img src="1w3.jpg" class="ig">
+            <img src="2w3.jpg" class="ig">
+            <img src="3w3.jpg" class="ig">
+            <img src="4w3.jpg" class="ig">
+        </div>
+    </div>
+
+    <div class="game_info">
+        <h1 class="text_game" id="SS">SimSity(1989)</h1>
+        <a href="#ss"><img src="SimCity_Classic_cover_art (2).jpg" class="info_foto" class="fotofix" class="ss"></a>
+        <h4 class="game_info_text">
+            <p class="git">SimCity, также известная как Micropolis или SimCity Classic[23], — компьютерная игра,
+                положившая начало градостроительному симулятору как полноценному жанру в игровой индустрииПерейти к
+                разделу «#Популярность и влияние». Игра была разработана Уиллом Райтом и выпущена для ряда платформ
+                преимущественно в 1989—1991 годахПерейти к разделу «#Портирование и версии игры». SimCity выполнена в
+                двумерной графике, обзор города происходит «сверху». Суть игрового процесса сводится к созданию города,
+                развитию жилых и промышленных зон, строительству инфраструктуры и сбору налогов для дальнейшего развития
+                города. В игре, как и в реальном мире, важно повышать уровень жизни населения и поддерживать баланс
+                между разными секторами, в противном случае населённый пункт может прийти в упадок и даже
+                обанкротитьсяПерейти к разделу «#Игровой процесс».
+            </p>
+
+            <p class="git">
+                Несмотря на то, что выпуск игры состоялся в 1989 году, симулятор был самостоятельно разработан Уиллом
+                Райтом в 1985 году, когда тот только начинал свою карьеру в качестве инди-разработчика, то есть ещё до
+                образования студии MaxisПерейти к разделу «#Разработка игры». Однако в течение четырёх лет игровые
+                издатели отказывались выпускать проект из-за боязни провала продаж, так как в игре отсутствовали
+                какие-либо элементы аркады или экшена, господствовавшие на рынке компьютерных игр в 1980-е годы. В конце
+                концов на распространение игры согласилась компания BrøderbundПерейти к разделу «#Выход». Хотя поначалу
+                SimCity продавалась плохо, но после положительных отзывов от игровой прессы продажи симулятора выросли.
+                Получив статус «бестселлера», симулятор был выпущен на множество других платформ, самой популярной из
+                которых оказалась версия для игровой приставки SNES, изданная в 1991 году, в которой при соучастии
+                компании Nintendo был значительно улучшен игровой процессПерейти к разделу «#Super Nintendo
+                Entertainment System».</p>
+
+            <p class="git">Градостроительный симулятор был признан новым феноменом в игровой индустрии, и по мнению
+                прессы сломал
+                среди многих пользователей персональных компьютеров убеждение, что компьютерные игры предназначены
+                прежде всего для детей. SimCity получила 24 награды от разных новостных издателей и ассоциацийПерейти к
+                разделу «#Популярность и влияние». Критики в основном положительно отозвались о SimCity, назвав её
+                геймплей новаторским для 1980-х годов, а саму игру очень затягивающей, даже несмотря на то, что она
+                лишена элементов шутера и платформера. Также, по мнению рецензентов, игра очень поучительна и поможет
+                игроку понять основы урбанистики, политики и экономикиПерейти к разделу «#Оценки и мнения».
+            </p>
+
+            <p class="git">
+                После выпуска было продано 300 000 копий SimCity для компьютеров и почти 2 миллиона экземпляров игры для
+                игровой приставки SNES. Успех игры положил начало линейке игр — градостроительных симуляторов и традиции
+                студии Maxis выпускать нелинейные игры-симуляторы, одна из которых — The Sims — превзошла всех своих
+                предшественников по популярности, став самой продаваемой франшизой в истории компьютерных игр</p>
+        </h4>
+        <div class="game_scrinshots">
+            <h3 class="scrin_text">Скриншоты из игры-------<a href="https://playminigames.ru/game/simcity">Играть</a>
+            </h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A54blk-ojA4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <div ></div>
+    <button class="button" id="showHide"></button> &nbsp;
+    <script src="J_1.js"></script>
+</body>
+
+</html>
